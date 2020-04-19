@@ -60,7 +60,8 @@ if (NOT DEFINED SPDLOG_MASTER_PROJECT)
 endif ()
 
 # build shared option
-option(SPDLOG_BUILD_SHARED "Build shared library" OFF)
+# C3NZ - Had to modify this to on to build it for a shared library.
+option(SPDLOG_BUILD_SHARED "Build shared library" ON)
 
 # precompiled headers option
 option(SPDLOG_ENABLE_PCH "Build static or shared library using precompiled header to speed up compilation time" OFF)
