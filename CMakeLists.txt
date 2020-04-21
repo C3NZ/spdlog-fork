@@ -61,7 +61,8 @@ endif ()
 
 # build shared option
 # C3NZ - Had to modify this to on to build it for a shared library.
-option(SPDLOG_BUILD_SHARED "Build shared library" ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+option(SPDLOG_BUILD_SHARED "Build shared library" OFF)
 
 # precompiled headers option
 option(SPDLOG_ENABLE_PCH "Build static or shared library using precompiled header to speed up compilation time" OFF)
