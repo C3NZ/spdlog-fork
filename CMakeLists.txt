@@ -60,8 +60,8 @@ if (NOT DEFINED SPDLOG_MASTER_PROJECT)
 endif ()
 
 # build shared option
-# C3NZ - Had to modify this to on to build it for a shared library.
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+# Not needed anymore as the engine is being built statically.
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 option(SPDLOG_BUILD_SHARED "Build shared library" OFF)
 
 # precompiled headers option
